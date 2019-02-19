@@ -24,3 +24,13 @@ wget http://download.tensorflow.org/example_images/flower_photos.tgz
 
 tar -xf flower_photos.tgz
 ```
+
+
+- **To convert a GrapgDef to .tflite**
+```
+tflite_convert \
+  --output_file=/tmp/foo.tflite \
+  --graph_def_file=/tmp/mobilenet_v1_0.50_128/frozen_graph.pb \
+  --input_arrays=input \
+  --output_arrays=MobilenetV1/Predictions/Reshape_1
+ ```
