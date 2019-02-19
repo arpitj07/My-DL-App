@@ -4,9 +4,11 @@
 - **Installation** 
 
 ```
-pip install --upgrade "tensorflow==1.7.*"
-
+pip install --upgrade "tensorflow==1.9"
 ```
+- **if you are on WINDOWS there are some limitations for tflite_converter**
+follow [this](https://stackoverflow.com/a/53190791/9329562) or you can follow [this](https://stackoverflow.com/a/51771078/9329562)
+
 
 **Clone the github repo**
 ```
